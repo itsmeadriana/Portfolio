@@ -139,6 +139,7 @@ footer {
 .project-desc {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 50px 30px;
@@ -156,25 +157,80 @@ footer {
 }
 
 .project-cards {
+    margin: auto 30px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-radius: 10px;
-    align-items: center;
+    align-items: stretch;
     background-color:var(--tertiary-color);
 }
 .cards {
     border: 3px solid var(--text-color);
     border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
 }
 .card-imgs a img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 35%;
+    /* padding: 10px; */
+    margin: auto;
+    width: 100%;
+    height: 75%;
     background-color: var(--tertiary-color);
     border-radius: 10px;
+}
+
+.card-desc {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 15px 50px;
+}
+
+.contactme {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.contact-me-text {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    background-color: var(--accent-color1);
+    line-height: 1.7;
+    color:var(--highlight-color);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 3px solid var(--highlight-color);
+    border-left: 3px solid var(--highlight-color);
+    border-radius: 10px;
+}
+
+.contactme ul li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none; 
+    color:var(--accent-color3);
+}
+
+.contact ul li a {
+    list-style: none;
 }
 
 h2 {
@@ -185,4 +241,30 @@ h2 {
     margin: 10px 20px;
     font-size: 24px;
     line-height: 1.7;
+}
+
+.contactme h2 {
+    color:var(--highlight-color);
+    border-bottom: 1px solid var(--highlight-color);
+}
+
+
+
+h3 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    margin: auto;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+
+/* a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+} */
+
+.flex-row {
+    display: flex;
 }
