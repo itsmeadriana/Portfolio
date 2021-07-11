@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #EF8A97;
+    --secondary-color: #FBE0E4;
+    --tertiary-color:#88CFD2;
+    --accent-color1: #F09A44;
+    --accent-color2: #CCE8C0;
+    --accent-color3: #D6F5F6;
+    --main-background-color: #F9DBE6;
+    --shadow-color: #EFA0BD;
+    --highlight-color: #F5EDED;
+    --text-color: #515B4B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 25px 35px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 100%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 64px;
+    color:var(--secondary-color);
+    text-shadow:var(--shadow-color);
+    margin: 0;
+    line-height: 1.5;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+header a {
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+
+header nav {
+    margin: auto 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 15px 20px;
+    font-weight: lighter;
+    line-height: 1.5vw;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secondary-color);
+    text-shadow:var(--shadow-color);
+}
+
+header nav ul li a:hover {
+    background:none;
+    color:var(--tertiary-color);
+    border-radius: 20px;
+    text-shadow: var(--accent-color3);
+}
+
+footer {
+    padding: 25px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    color:var(--highlight-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    background-color: var(--main-background-color);
+    line-height: 1.7;
+    color:var(--text-color);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 3px solid var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.Run-Buddy {
+    background-color: var(--accent-color2);
+    color: var(--text-color);
+    border-radius: 10px;
+    border-top: 3px solid var(--text-color);
+    border-right: 3px solid var(--text-color);
+    padding: 40px 0 0;
+    margin: 25px 30px;
+}
+
+.project-desc {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: 15px 50px;
+}
+
+.landscape a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: var(--main-background-color);
+    border-radius: 10px;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+    background-color:var(--tertiary-color);
+}
+.cards {
+    border: 3px solid var(--text-color);
+    border-radius: 10px;
+}
+.card-imgs a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 1px solid var(--shadow-color);
+    color:var(--primary-color);
+    text-align: center;
+    margin: 10px 20px;
+    font-size: 24px;
+    line-height: 1.7;
+}
