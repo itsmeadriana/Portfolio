@@ -2,6 +2,7 @@
 <html lang="eng">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Adriana Nieves</title> 
         <link rel="icon" type="image/svg+xml" href="/assets/images/favicon/favicon.png">
@@ -11,10 +12,10 @@
     <body>
         <header>
             <h1>Adriana Nieves</h1>
-            <nav class="border fixed split-nav">
+            <nav class="nav">
                 <ul>
                     <li>
-                        <a href="#about">about me</a>
+                        <a  href="#about">about me</a>
                     </li>
                     <li>
                         <a href="#projects">projects</a>
@@ -44,9 +45,24 @@
                 <h2>
                     projects
                 </h2>
+            <div class="projects-intro">
+            <div class="projects-img">
+                <img src="assets/images/Avatars/snakeplant.png" class="projects-img" alt="snakeplant">
+            </div>
+                <div class="projects-text">
+                    Here you'll find examples of and links to some of my early and fully-deployed projects. Though this section may look meager at the moment, it is a growing list! I look forward to sharing more of my work here in the future.
+                </div>
+                <div class="projects-img">
+                    <img src="assets/images/Avatars/snakeplant.png" class="projects-img" alt="snakeplant">
+                </div>
+                </div>
             </article>
             
             <article class="Run-Buddy">
+                <div class="project-desc">
+                    <h3>
+                        Run Buddy
+                    </h3>
                 <div class="landscape">
                     <figure>
                         <a href="https://itsmeadriana.github.io/Run-Buddy/">
@@ -54,10 +70,7 @@
                         </a>
                     </figure>
                 </div>
-                <div class="project-desc">
-                    <h3>
-                        Run Buddy
-                    </h3>
+                    <br>
                         <p>
                             Run Buddy is a fitness application that connects runners of all expertise levels with professional trainers.
                         </p>
@@ -65,71 +78,76 @@
             </article>
 
         <section class="project-cards">
-            <div class="flex-row">
             <article class="cards" id="Horiseon">
                 <div class="card-imgs" id="Horiseon">
                     <figure>
                         <a href="https://itsmeadriana.github.io/Hori-SEO-n/">
-                            <img src="assets/images/web images/Horiseon.png" alt="Horiseon">
+                            <img class="card-imgs-link" src="assets/images/web images/Horiseon.png" alt="Horiseon">
                         </a>
                     </figure>
                 </div>
                 <div class="card-desc">
                 <h3>
+                  <a href="https://itsmeadriana.github.io/Hori-SEO-n/">
                     Horiseon
+                  </a>
                 </h3>
                 <p>
                     Horiseon is a marketing service designed to bring businesses the best web and social media tools for optimum web visibility.
                 </p>
                 </div>
             </article>
-            </div> 
-      
-            <div class="flex-row">                
-                <article class="cards" id="future">
-                    <div class="card-imgs" id="future">
+             
+                     
+            <article class="cards" id="future">
+                <div class="card-imgs" id="future">
                     <figure>
-                        <a href="https://itsmeadriana.github.io">
-                            <img src="assets/images/Avatars/wateringcan.png" alt="Adriana holds a watering can to a potted plant.">
+                        <a href="https://github.com/itsmeadriana">
+                            <img class="card-imgs-link futures" src="assets/images/Avatars/wateringcan.png" alt="Adriana holds a watering can to a potted plant.">
                         </a>
                     </figure>
                 </div>
                 <div class="card-desc">
                 <h3>
+                    <a href="https://github.com/itsmeadriana"> 
                     Future Projects
+                    </a>
                 </h3>
                 <p>
                     I'm still planting seeds and watering sprouts at the moment, so watch this space!
                 </p>
                 </article>
-            </div>
-
-            <div class="flex-row">                
+            
+              
                 <article class="cards" id="rps">
                     <div class="card-imgs" id="rps">
                     <figure>
                         <a href="https://itsmeadriana.github.io/RockPaperScissors/">
-                            <img src="assets/images/web images/rps.png">
+                            <img class="card-imgs-link" src="assets/images/web images/rps.png">
                         </a>
                     </figure>
                 </div>
                 <div class="card-desc">
                 <h3>
-                    Rock, Paper, Scissors
+                  <a href="https://itsmeadriana.github.io/RockPaperScissors/">
+                    Rock, Paper, Scissors - SHOOT!
+                  </a>
                 </h3>
                 <p>
-                    A simple yet jaunty game of Rock, Paper, Scissors against a JavaScript code.
+                    A simple yet jaunty game of Rock, Paper, Scissors against a snarky JavaScript program.
                 </p>
                 </article>
-            </div>
+    
             
         </section>
         
-        <section class="contactme">
-            <article class="contact-me-text" id="contact">
+        <section class="contactme" id="contact">
+            <article class="contact-me-text">
                 <h2>reach out</h2>
-                <p>
+                <div class="contact-desc">
                     If you like what you see, let's connect! I'm still growing as a developer and I'd love to help you grow your project, too!
+                </div>
+                <div class="links">  
                     <ul>
                         <li>
                             <a href="https://github.com/itsmeadriana">GitHub</a>
@@ -138,10 +156,10 @@
                             <a href="https://www.linkedin.com/in/adriananieves/">LinkedIn</a>
                         </li>
                     </ul>
-                </p>
+                </div>
             </article>
             <div id="contact" class="singing-img"> 
-                    <img src="assets/images/Avatars/sitting-and-singing.png" class="float-left" alt="Adriana at her desk">
+                    <img src="assets/images/Avatars/sitting-and-singing.png" class="sitting-and-singing-img" alt="Adriana sitting and singing.">
             </div> 
         </section>
         
