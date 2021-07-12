@@ -36,4 +36,4 @@ With contributions from the following sourcees:
 
 ❤️ Made with love by Adriana ❤️
 ####
-©️2021 Copyright Horiseon, Inc.
+©️2021 Copyright Adriana Nieves
