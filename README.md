@@ -32,7 +32,7 @@ https://itsmeadriana.github.io/Portfolio
 ###
 With contributions from the following sourcees:
  - "CSS Hover Image Effects" template @ https://codepen.io/nxworld.
- - And the wonderful, extraordinarily charming and upbeat illustrations by Leni Kauffman. /nThe images in this project were provided as customizeable, open-source designs at https://blush.design. /nYou can visit the artist's personal website at https://www.lenikauffman.com.
+ - And the wonderful, extraordinarily charming and upbeat illustrations by Leni Kauffman. The images in this project were provided as customizeable, open-source designs at https://blush.design. You can visit the artist's personal website at https://www.lenikauffman.com.
 
 ❤️ Made with love by Adriana ❤️
 ####
