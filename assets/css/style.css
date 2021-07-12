@@ -287,6 +287,7 @@ footer {
     justify-content: space-between;
     border-radius: 10px;
     align-items: center;
+    overflow: none;
 }
 
 .contact-desc {
@@ -299,16 +300,16 @@ footer {
     color:var(--highlight-color);
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
-    margin: 20px 30px;
-    padding: 20px 20px;
+    margin: 0 0 0 40px;
+    padding: 20px 20px 30px 20px;
     text-align: left;
     border-bottom: 3px solid var(--tertiary-color);
     border-left: 3px solid var(--tertiary-color);
     border-radius: 10px;
     justify-content: space-between;
     max-width: 50%;
+    overflow: hidden;
 }
-
 
 .contact-me-text ul li {
     text-align: center;
@@ -317,6 +318,7 @@ footer {
     flex-direction: column;
     list-style: none; 
     padding: 2px auto; 
+    overflow: none;
 }
 
 .contact-me-text ul li a {
@@ -326,17 +328,27 @@ footer {
     color:var(--tertiary-color);
     text-decoration: none;
     text-shadow: var(--shadow-color);
+    align-content: space-around;
+    margin: 0 30%;
+    padding: 5px 0;
 }
 
-.links {
-    padding: 5px 0;
-    margin: 0 20px;
+.github {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+}
+
+.linkedin {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
 
 .contact-me-text ul li a:hover {
     color:var(--accent-color1);
     font-size: 24px;
-    align-content: space-around;
+    overflow: hidden;
 }
 
 .sitting-and-singing-img {
