@@ -30,8 +30,12 @@ https://itsmeadriana.github.io/Portfolio
 
 ## Contribution:
 ###
-With contributions from "CSS Hover Image Effects" template @ https://codepen.io/nxworld
-And the wonderful, extraordinarily charming and upbeat illustrations by Leni Kauffman. The images in this project were provided as customizeable, open-source designs at https://blush.design. You can visit the artist's personal website at https://www.lenikauffman.com.
+With contributions from 
+ - "CSS Hover Image Effects" template @ https://codepen.io/nxworld.
+ - And the wonderful, extraordinarily charming and upbeat illustrations by Leni Kauffman.
+ -- The images in this project were provided as customizeable, open-source designs at https://blush.design. 
+ -- You can visit the artist's personal website at https://www.lenikauffman.com.
+
 ❤️ Made with love by Adriana ❤️
 ####
 ©️2021 Copyright Horiseon, Inc.
