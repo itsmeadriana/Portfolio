@@ -114,10 +114,10 @@ footer {
     background-color: var(--main-background-color);
     line-height: 1.7;
     color:var(--text-color);
-    font-size: 22px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 10px 10px;
-    padding: 10px 20px;
+    margin: 10px;
+    padding: 20px;
     text-align: left;
     border-bottom: 3px solid var(--primary-color);
     border-left: 3px solid var(--primary-color);
@@ -138,13 +138,6 @@ footer {
     align-items: center;
 }
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; 
-}
 .projects-text {
     display: flex;
     flex-direction: column;
@@ -154,7 +147,7 @@ footer {
     background-color: var(--main-background-color);
     line-height: 1.7;
     color:var(--text-color);
-    font-size: 2vw;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
     padding: 20px 20px;
@@ -179,7 +172,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 18px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 10px;
     border-radius: 10px;
@@ -190,7 +183,7 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    max-width: 100%;
     background-color: var(--main-background-color);
     border-radius: 10px;
 }
@@ -229,28 +222,34 @@ footer {
     line-height: 1.5;
 }
 
-.project-cards {
-    margin: auto 30px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    border-radius: 10px;
-    align-items: stretch;
-    background-color:var(--tertiary-color);
-    border-bottom: 5px solid var(--accent-color3);
-    border-left: 5px solid var(--accent-color3);
-}
 .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     border: 3px solid var(--accent-color3);
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
     align-items: stretch;
 }
+
+.project-cards {
+    margin: auto 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: stretch;
+    background-color:var(--tertiary-color);
+    border-bottom: 5px solid var(--accent-color3);
+    border-left: 5px solid var(--accent-color3);
+}
+
 .card-imgs a img {
     display: block;
-    /* padding: 10px; */
     margin: auto;
     width: 100%;
     height: auto;
@@ -263,7 +262,7 @@ footer {
     text-align: center;
     color: white;
     border-bottom: 1px solid var(--tertiary-color);
-    padding: 10px;
+    padding: 14px;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -272,7 +271,7 @@ footer {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px 20px;
     border-radius: 10px;
@@ -284,21 +283,20 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: flex-end; */
     border-radius: 10px;
     align-items: center;
-    overflow: none;
 }
 
 .contact-desc {
-    border-bottom: 1px solid (--tertiary-color);
+    padding-bottom:10px;
 }
 
 .contact-me-text {
     background-color: var(--accent-color1);
     line-height: 1.7;
     color:var(--highlight-color);
-    font-size: 22px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif, Arial, sans-serif;
     margin: 0 0 0 40px;
     padding: 20px 20px 30px 20px;
@@ -317,20 +315,19 @@ footer {
     justify-content: center;
     flex-direction: column;
     list-style: none; 
-    padding: 2px auto; 
-    overflow: none;
 }
 
 .contact-me-text ul li a {
-    line-height: 2;
-    background-color: white;
+    line-height: 1.5;
     list-style: none;
-    color:var(--tertiary-color);
+    color: white;
     text-decoration: none;
     text-shadow: var(--shadow-color);
     align-content: space-around;
-    margin: 0 30%;
-    padding: 5px 0;
+    margin: auto 30%;
+    padding: 0;
+    font-size: 18;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .github {
@@ -346,9 +343,9 @@ footer {
 }
 
 .contact-me-text ul li a:hover {
-    color:var(--accent-color1);
+    color:var(--text-color);
     font-size: 24px;
-    overflow: hidden;
+    overflow: none;
 }
 
 .sitting-and-singing-img {
@@ -385,6 +382,11 @@ h3 {
     line-height: 1.5;
     font-weight: bolder;
     text-decoration: none;
+}
+
+.card-desc h3 {
+    justify-content: center;
+    text-align: center;
 }
 
 footer a {
@@ -496,7 +498,7 @@ footer a:hover {
         flex-wrap: nowrap;
         width: 65%;
         height: auto;
-        margin: auto;
+        margin: auto auto 20px auto;
     }
 
     .card-desc img {
@@ -505,8 +507,11 @@ footer a:hover {
         justify-content: center;
     }
 
+    .contactme {
+        margin: auto auto 20px auto;
+    }
     .contact-me-text {
-        width: 60%;
+        font-size: 18px;
     }
 
     .contact-me-text h2 {
@@ -549,6 +554,18 @@ footer a:hover {
 }
 
 @media screen and (max-width: 440px) {
+    footer {
+        padding: 15px 15;
+    }
+
+    footer h4 {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 11px;
+    }
+    
     .nav ul {
         flex-wrap: wrap;
         flex-direction: column;
@@ -556,4 +573,49 @@ footer a:hover {
         align-content: center;
         text-align: center;
     }
+
+    .about-me-text {
+        font-size: 16px;
+    }
+
+    .projects-intro {
+        margin-bottom: 20px;
+    }
+
+    .projects-text {
+        font-size: 16px;
+        max-width: 60%;
+    }
+    
+    .Run-Buddy h3 {
+        font-size: 18px;
+    }
+
+    .card-imgs-link img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-cards {
+        margin-bottom: 20px;
+    }
+
+    .contactme {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: auto auto 20px auto;
+        align-items: center;
+        height: auto;
+    }
+
+    .contact-me-text {
+        margin: auto auto 20px 20px;
+        max-width: 60%;
+        font-size: 16px;
+    }
+
+    .contact-me-text ul li a {
+        margin: auto 45;
+    }
+
 }
