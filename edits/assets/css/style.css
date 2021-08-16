@@ -24,11 +24,13 @@ header {
     position:-webkit-sticky;
     position: sticky;
     top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px 20px;
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    
+    
 }
 
 header h1 {
@@ -39,7 +41,6 @@ header h1 {
     margin: 0;
     line-height: 1.5;
     font-family:'Courier New', Courier, monospace;
-
 }
 
 header a {
@@ -72,7 +73,6 @@ header nav ul li a {
 header nav ul li a:hover {
     background:none;
     color:var(--tertiary-color);
-    text-shadow: var(--accent-color3);
 }
 
 /* my sticky header was cutting off the tops of my <sections> so I found this neat solution on overstack that will adjust (pad) the scroll target to 150px from the id tag */
@@ -98,20 +98,23 @@ h2 {
     line-height: 1.7;
     border-bottom: 3px solid;
 }
+
+box {
+    border-radius: 10px;
+}
+
 .about-me {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
-    border-radius: 10px;
     align-items: center;
 }
 
 .about-me-img {
-    width: 50vw;
+    width: 50vw;   
 }
 
-.about-me-text {
+.about-me-text.box {
     display: flex;
     flex-direction: column;
     background-color: var(--main-background-color);
@@ -121,30 +124,32 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
     padding: 20px;
-    text-align: left;
-    border-bottom: 3px solid var(--primary-color);
-    border-left: 3px solid var(--primary-color);
+    border-bottom:3px solid var(--primary-color);
+    border-left: 3px solid  var(--primary-color);
     border-radius: 10px;
 }
 
 .projects-intro {
     display: flex;
     flex-wrap: nowrap;
-    align-items: column;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 20%;
 }
 
-.projects-img {
-    width: 100%;
-    height: 80%;
+.div projects-img {
+    width: 20%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
+
 }
 
 .projects-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: wrap;
     justify-content: center;
     text-align: center;
@@ -159,6 +164,8 @@ h2 {
     border-bottom: 3px solid var(--primary-color);
     border-left: 3px solid var(--primary-color);
     border-radius: 10px;
+    width: 60%
+    
 }
 
 .Run-Buddy {
