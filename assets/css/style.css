@@ -166,6 +166,10 @@ footer {
     border-left: 3px solid var(--text-color);
 }
 
+.gripeSupport p {
+    padding: unset;
+}
+
 .soundtracker h3 {
     color:var(--accent-color1);
 }
