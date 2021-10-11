@@ -153,6 +153,23 @@ footer {
     border-radius: 10px;
 }
 
+.gripeSupport h3 {
+    color: var(--text-color);
+}
+
+.gripeSupport {
+    color:var(--text-color);
+    background-color: lavender;
+    border-radius: 10px;
+    margin: 25px 30px;
+    border-bottom: 3px solid var(--text-color);
+    border-left: 3px solid var(--text-color);
+}
+
+.soundtracker p {
+    padding: unset;
+}
+
 .soundtracker h3 {
     color:var(--accent-color1);
 }
